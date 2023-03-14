@@ -1,0 +1,464 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	
+}
+
+:root {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: rgb(12, 7, 7);
+}
+
+.botones{
+	font-size: 30px;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, .7);
+	text-align: center;
+	font-weight: bold;
+	position: absolute;
+	color: #fff;
+	
+}
+
+.botones:hover{
+	cursor: pointer;
+	transform: scale(1.2, 1.2);
+}
+.atras{
+	left: 2%;
+	top: calc(50% - 70%);
+
+}
+.adelante{
+	right: 2%;
+	top: calc(50% - 70%);
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: auto;
+	padding: 15px 0;
+	
+}
+
+
+.copy {
+	font-weight: 300;
+	font-size: 25px;
+}
+
+/*Servicios Nuestros*/
+.subtitulo {
+	text-align: center;
+	font-weight: 100;
+	color: #f6f6f7;
+	margin-bottom: 40px;
+	font-size: 30px;
+	padding-top: 0px;
+}
+/*Tipografia y tamaño de letra*/
+
+
+.contenedor-servicio {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.contenedor-servicio img {
+	width: 40%;
+}
+
+.imagen1-servicio {
+	width: 45%;
+}
+
+.service {
+	margin-bottom: 20px;
+}
+.service p{
+	text-align: justify;
+	
+}
+
+.n-servicio {
+	margin-bottom: 10px;
+	color: #f9f9fa;
+	font-size: 20px;
+}
+
+
+
+.center{
+	text-align: justify;
+}
+
+.tamaño{
+	height: 500px;
+	width: 300px;
+}
+
+
+.agregar-imagen {
+	object-fit: cover;
+	width: 60%;
+	border-radius: 10px;
+	transform: scale(100%);
+	transition: transform .3s .2s;
+}
+
+.showImage {
+	transform: scale(1);
+}
+
+
+
+.experts {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.cont-expert {
+	width: 30%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.cont-expert img {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.n-expert {
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
+	font-weight: 400;
+}
+
+footer {
+	background: #9f8ad0;
+	padding-bottom: 0.1px;
+}
+
+.footer-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	align-items: flex-start;
+	justify-content: center;
+  }
+  
+  .footer-container ul {
+	margin: 0 auto;
+  }
+  
+  .footer-links li {
+	line-height: 2.8;
+  }
+  
+  .footer {
+	background: #2f3640;
+	color: #616161;
+	font-size: 12px;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 1rem;
+	padding-bottom: 20px;
+  }
+  
+.brand {
+	font-weight: 500;
+	font-size: 40px;
+}
+
+.brand+p {
+	font-weight: 500;
+}
+
+
+
+
+
+.line {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 2px;
+	background: #fff;
+	margin-bottom: 60px;
+}
+
+/*Inicia estilos*/
+.linea-division {
+	width: 80%;
+	height: 2px;
+	background-color: #36221c;
+}
+
+/*estilos del footer*/
+
+/*Estilos del new-cards */
+/* News Cards */
+.news-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 25px;
+	margin: 5px 0;
+  }
+  
+  .news-cards img {
+	width: 100%;
+	height: 180px;
+  }
+  
+  .news-cards h3 {
+	font-size: 20px;
+	margin: 10px 0;
+  }
+  
+  .news-cards a {
+	padding: 10px 0;
+	color: #021b6b;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: bold;
+  }
+  /*New Cards 1*/
+ 
+
+
+  
+  
+@media screen and (max-width: 800px) {
+	
+	header nav ul li{
+		display: block;
+		float: none;
+		border-bottom:  1px solid rgba(255, 255, 255, .3);
+	}
+	.menu_bar{
+		display: block;
+		width: 100%;
+		background: #ccc;
+	}
+	.menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		background: #024959;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 25px;
+		position: absolute;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.titulo {
+		font-size: 40px;
+	}
+
+	.contenedor-servicio img {
+		width: 80%;
+		margin-bottom: 40px;
+	}
+
+	.imagen1-servicio {
+		width: 80%;
+	}
+
+	.service {
+		margin-bottom: 30px;
+	}
+
+	.agregar-imagen {
+		width: 80%;
+	}
+
+	.img-galeria {
+		width: 45%;
+	}
+
+	.cont-expert {
+		width: 80%;
+	}
+
+	.footer-content {
+		justify-content: center;
+	}
+
+	.social-media {
+		width: 80%;
+		justify-content: space-evenly;
+	}
+
+	.social-media-icon {
+		margin-left: 0;
+	}
+
+	.social-media i {
+		margin-left: 0;
+	}
+
+	.contact-us {
+		text-align: center;
+		width: 80%;
+		margin-bottom: 40px;
+	}
+	.footer-links .footer-container {
+		grid-template-columns: repeat(1, 1fr);
+	  }
+	
+	/*News cards de imagenes*/
+	.news-cards {
+		grid-template-columns: repeat(2, 1fr);
+	  }
+	
+}
+
+@media screem and (max-width: 500px) {
+	.header .letras{
+		font-size: 5px;
+	}
+	.menu-navegacion {
+		width: 65vw;
+	}
+
+
+	.titulo {
+		font-size: 30px;
+	}
+
+	.subtitulo {
+		font-size: 30px;
+	}
+
+	.agregar-imagen {
+		width: 95%;
+	}
+
+	.img-galeria {
+		width: 95%;
+	}
+
+	.social-media {
+		width: 100%;
+	}
+
+
+	.contact-us {
+		width: 90%;
+	}
+	.news-cards {
+		grid-template-columns: 1fr;
+	  }
+	  
+	
+}
+
+@media screen and (max-width: 400px) {
+
+	header nav ul li{
+		display: block;
+		float: none;
+		border-bottom:  1px solid rgba(255, 255, 255, .3);
+	}
+	.menu_bar{
+		display: block;
+		width: 100%;
+		background: #ccc;
+	}
+	.menu_bar .bt-menu{
+		display: block;
+		padding: 20px;
+		background: #024959;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.menu_bar span{
+		float: right;
+		font-size: 35px;
+	}
+
+	.titulo {
+		font-size: 40px;
+	}
+
+	.contenedor-servicio img {
+		width: 80%;
+		margin-bottom: 40px;
+	}
+
+	.imagen1-servicio {
+		width: 80%;
+	}
+
+	.service {
+		margin-bottom: 30px;
+	}
+
+	.agregar-imagen {
+		width: 80%;
+	}
+
+	.img-galeria {
+		width: 45%;
+	}
+
+	.cont-expert {
+		width: 80%;
+	}
+
+	.footer-content {
+		justify-content: center;
+	}
+
+	.social-media {
+		width: 100%;
+		justify-content: space-evenly;
+		font-size: 10px;
+	}
+
+	.social-media-icon {
+		margin-left: 0;
+		justify-items: auto;
+	}
+
+	.social-media i {
+		margin-left: 0;
+	}
+
+	
+	.footer-links .footer-container {
+		grid-template-columns: repeat(1, 1fr);
+		text-align: justify;
+	  }
+	
+	/*News cards de imagenes*/
+	.news-cards {
+		grid-template-columns: repeat(1, 1fr);
+	  }
+}
